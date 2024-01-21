@@ -1,10 +1,14 @@
 package com.project.betweenusbackend.Entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.NoArgsConstructor;
 @Data
-@Document(collection = "posts")
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
 public class Post {
     @Id
     private String postId;
